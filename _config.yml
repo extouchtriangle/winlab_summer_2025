@@ -8,9 +8,9 @@ color_scheme: purple-dark
 highlighter: rogue
 just_the_docs_rouge_theme: color_schemes/syntax
 # Disable HTML compression to fix line numbers
-compress_html:
-  ignore:
-    envs: all
+# compress_html:
+#   ignore:
+#     envs: all
 # Enable line numbers globally for code blocks
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
