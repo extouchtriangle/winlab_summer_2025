@@ -1,5 +1,5 @@
 ---
-name: Using VRSlib
+title: Using VRSlib
 nav_order: 1
 parent: Tutorials
 ---
