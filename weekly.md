@@ -1,6 +1,6 @@
 ---
 title: Weekly Progress
-layout: home
+layout: default
 nav_order: 2
 ---
 
@@ -123,20 +123,36 @@ Camera.fps: 15
 Camera.RGB: 1
 
 IMU.T_b_c1: !!opencv-matrix
-   rows: 4
-   cols: 4
-   dt: f
-   data: [0.096069622099, 0.777188953575, -0.621890631985, -0.011539435317,
-          0.994493238815, -0.101231365144, 0.027118419253, -0.005419289842,
-       -0.041878701764, -0.621071285081, -0.782634418606, -0.000644298931,
-        0.000000000000, 0.000000000000, 0.000000000000, 1.000000000000]
+  rows: 4
+  cols: 4
+  dt: f
+  data:
+    [
+      0.096069622099,
+      0.777188953575,
+      -0.621890631985,
+      -0.011539435317,
+      0.994493238815,
+      -0.101231365144,
+      0.027118419253,
+      -0.005419289842,
+      -0.041878701764,
+      -0.621071285081,
+      -0.782634418606,
+      -0.000644298931,
+      0.000000000000,
+      0.000000000000,
+      0.000000000000,
+      1.000000000000,
+    ]
 
-IMU.NoiseGyro: 1e-3 
-IMU.NoiseAcc: 1e-2  
-IMU.GyroWalk: 1e-7 
-IMU.AccWalk: 1e-7 
+IMU.NoiseGyro: 1e-3
+IMU.NoiseAcc: 1e-2
+IMU.GyroWalk: 1e-7
+IMU.AccWalk: 1e-7
 IMU.Frequency: 794.55
 ```
+
 - I then ran ORB-SLAM3 on a bunch of recordings and plotted the results:
-![ORB-SLAM3 graph](assets/images/orbslam_graph.png "ORB-SLAM3 graph")
+  ![ORB-SLAM3 graph](assets/images/orbslam_graph.png "ORB-SLAM3 graph")
 - The rest of the time was spent working on the final presentation and poster.
