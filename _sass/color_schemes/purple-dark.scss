@@ -93,6 +93,8 @@ $header-height: 7rem;
 $nav-width: 15rem;
 $nav-width-md: 15rem;
 .site-header {
-  // margin-top: -10rem;
-  display: none;
+  margin-top: -10rem;
+}
+body {
+  padding-top: 1rem;
 }
