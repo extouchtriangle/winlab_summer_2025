@@ -113,13 +113,10 @@ Camera.height: 2400
 
 Camera.newWidth: 600
 Camera.newHeight: 600
-# Camera frames per second
 Camera.fps: 15
 
-# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
 
-# Transformation from camera to body-frame (imu)
 IMU.T_b_c1: !!opencv-matrix
    rows: 4
    cols: 4
@@ -129,7 +126,6 @@ IMU.T_b_c1: !!opencv-matrix
        -0.041878701764, -0.621071285081, -0.782634418606, -0.000644298931,
         0.000000000000, 0.000000000000, 0.000000000000, 1.000000000000]
 
-# IMU noise (Use those from VINS-mono)
 IMU.NoiseGyro: 1e-3 # rad/s^0.5
 IMU.NoiseAcc: 1e-2   # m/s^1.5
 IMU.GyroWalk: 1e-7 # rad/s^1.5
