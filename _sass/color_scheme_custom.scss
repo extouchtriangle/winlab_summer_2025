@@ -1,0 +1,30 @@
+// just-the-docs has to be imported first
+@import "just-the-docs";
+
+// The custom color scheme
+.color-scheme-purple-dark {
+  // Global color variables
+  --body-background-color: #282c34;
+  --text-color: #abb2bf;
+  --link-color: #c678dd;
+  --link-hover-color: #e06c75;
+  --hr-color: #61afef;
+
+  // Header and Footer
+  --header-background-color: #21252b;
+  --footer-background-color: #21252b;
+  --search-background-color: #3e4452;
+  --search-result-background-color: #282c34;
+  --search-result-text-color: #abb2bf;
+  --header-text-color: #abb2bf;
+
+  // Sidebar navigation
+  --sidebar-background-color: #21252b;
+  --sidebar-text-color: #abb2bf;
+  --sidebar-hover-color: #3e4452;
+  --sidebar-current-color: #c678dd;
+
+  // Code blocks
+  --code-background-color: #3e4452;
+  --code-text-color: #abb2bf;
+}
