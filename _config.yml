@@ -5,5 +5,14 @@ theme: just-the-docs
 url: https://extouchtriangle.github.io/winlab_summer_2025
 search_enabled: false
 color_scheme: purple-dark
-highlighter: rogue
+highlighter: rouge
 just_the_docs_rouge_theme: color_schemes/syntax
+# aux_links:
+#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+compress_html:
+  ignore:
+    envs: all
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
