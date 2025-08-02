@@ -7,15 +7,10 @@ layout: default
 
 # Using VRSLib
 
-> Note:
->  Make sure you have ran `sudo make install` in the build directory of VRS
->  before doing this.
-
-VRSLib has many dependencies and it can be quite hard to link the
-dependencies in the right order. Because its CMake library file is not very
-polished (and there was only one file that needed it), G++ was used instead.
-The command is:
-
+VRSLib has many dependencies, and it can be quite hard to link them
+in the right order during compilation. If you want to compile them without
+using CMake (like I did for the one file I wrote using the library),
+here is the command to do so:
 ```bash
 g++ file_namename.cpp -o executable_name \
     -L/usr/local/lib \
@@ -36,3 +31,7 @@ g++ file_namename.cpp -o executable_name \
     -lfmt \
     -lpthread
 ```
+
+{: .important }
+>  Make sure you actually install the library (i. e. `sudo make install`)
+> before running the command above.
