@@ -1,5 +1,5 @@
 ---
-title: Weekly Reports
+title: Weekly Progress
 layout: home
 ---
 
@@ -37,8 +37,6 @@ layout: home
     }
   }
 ```
-
-- I was sadly unable to make it to the weekly presentation.
 
 ## Week 2
 

@@ -5,8 +5,12 @@ layout: home
 
 # Power-Efficient SLAM for AR Glasses
 
-Welcome!
+Hello! :wave:
 
-This is the homepage for the project "Power-Efficient SLAM for AR Glasses", for
-WINLAB Summer Intership 2025. For weekly progress reports and more, refer to the
-left sidebar.
+This is the project page for the project "Power-Efficient SLAM for AR Glasses"
+in the 2025 WINLAB Summer Internship.
+
+In this project, we aim to study how different on-device
+recording configurations impact SLAM quality and power usage on AR glasses.
+
+To see weekly progress, slideshows, and more, check out the left sidebar.
