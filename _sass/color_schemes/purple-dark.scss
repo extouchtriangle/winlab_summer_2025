@@ -1,4 +1,4 @@
-// _sass/color_schemes/catppuccin.scss
+// _sass/catppuccin-theme-variables.scss
 
 // Catppuccin (Mocha) palette
 $catppuccin-rosewater: #f5e0dc;
@@ -28,44 +28,60 @@ $catppuccin-base: #1e1e2e;
 $catppuccin-mantle: #181825;
 $catppuccin-crust: #11111b;
 
-// General overrides
-$body-background-color: $catppuccin-crust;
-$body-text-color: $catppuccin-text;
-$body-heading-color: $catppuccin-text;
-$link-color: $catppuccin-mauve;
+// Just the Docs theme variable overrides with Catppuccin colors
+$color-scheme: catppuccin !default; // Set the scheme name
 
-// Header and Footer
-$header-background-color: $catppuccin-mantle;
-$header-text-color: $catppuccin-subtext0;
-$header-search-input-color: $catppuccin-text;
-$header-search-background-color: $catppuccin-base;
+// General colors
+$body-background-color: $catppuccin-crust !default;
+$body-text-color: $catppuccin-text !default;
+$body-heading-color: $catppuccin-text !default;
+$link-color: $catppuccin-mauve !default;
 
-// Sidebar (Nav Bar) overrides
-$sidebar-background-color: $catppuccin-mantle;
-$sidebar-text-color: $catppuccin-subtext1;
-$sidebar-nav-link-color: $catppuccin-subtext0;
-$sidebar-nav-link-color-hover: $catppuccin-text;
-$sidebar-nav-link-color-active: $catppuccin-mauve;
-$sidebar-border-color: $catppuccin-surface0;
+// Header and Footer colors
+$header-background-color: $catppuccin-mantle !default;
+$header-text-color: $catppuccin-subtext0 !default;
+$header-search-input-color: $catppuccin-text !default;
+$header-search-background-color: $catppuccin-base !default;
 
-// Highlighting current link
-$sidebar-current-color: $catppuccin-mauve;
-$sidebar-current-background-color: $catppuccin-surface0;
-$sidebar-current-hover-color: $catppuccin-mauve;
-$sidebar-current-hover-background-color: $catppuccin-surface0;
+// Sidebar (Nav Bar) colors
+$sidebar-color: $catppuccin-mantle !default; // Main sidebar background
+$nav-link-color: $catppuccin-subtext0 !default; // Default link color in nav
+$nav-link-color-hover: $catppuccin-text !default; // Link hover color in nav
+$nav-external-link-color: $catppuccin-lavender !default; // External link color in nav
+$nav-current-link-color: $catppuccin-text !default; // Current active link text color in nav
+$sidebar-border-color: $catppuccin-surface0 !default; // Border color in sidebar
 
-// Search
-$search-background-color: $catppuccin-surface1;
-$search-result-background-color: $catppuccin-surface1;
-$search-result-border-color: $catppuccin-surface2;
+// Highlighting for current/active items in sidebar
+$sidebar-current-color: $catppuccin-mauve !default; // Color for active elements
+$sidebar-current-background-color: $catppuccin-surface0 !default; // Background for active elements
+$sidebar-current-hover-color: $catppuccin-mauve !default; // Hover color for active elements
+$sidebar-current-hover-background-color: $catppuccin-surface0 !default; // Hover background for active elements
 
-// Other components
-$code-background-color: $catppuccin-surface0;
-$code-text-color: $catppuccin-text;
-$table-border-color: $catppuccin-surface1;
+// Search component colors
+$search-background-color: $catppuccin-surface1 !default;
+$search-result-background-color: $catppuccin-surface1 !default;
+$search-result-border-color: $catppuccin-surface2 !default;
+$search-result-preview-color: $catppuccin-subtext0 !default; // Specific for search result snippet
 
-$callout-background-color: $catppuccin-surface0;
-$callout-title-color: $catppuccin-text;
-$callout-border-color: $catppuccin-mauve;
+// Button colors
+$base-button-color: $catppuccin-surface2 !default; // General button background
+$btn-primary-color: $catppuccin-mauve !default; // Primary button background
 
-$mermaid-background-color: $catppuccin-surface0;
+// Code block colors
+$code-background-color: $catppuccin-surface0 !default;
+$code-text-color: $catppuccin-text !default;
+
+// Table colors
+$table-background-color: $catppuccin-crust !default; // Table background
+$table-border-color: $catppuccin-surface1 !default;
+
+// Callout colors
+$callout-background-color: $catppuccin-surface0 !default;
+$callout-title-color: $catppuccin-text !default;
+$callout-border-color: $catppuccin-mauve !default;
+
+// Mermaid diagram background
+$mermaid-background-color: $catppuccin-surface0 !default;
+
+// Feedback section color (derived from sidebar-color in default, mapping to a darker tone here)
+$feedback-color: $catppuccin-crust !default;
