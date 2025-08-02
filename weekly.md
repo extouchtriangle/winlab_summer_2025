@@ -84,3 +84,10 @@ for i in range(num_frames):
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_cLud0nuOIFRterRV6IEc492I1zLgn_KeMaCOzJEN0q71m3Oelrj7p_88fSRi3fdLjFOIN63Aqq8_/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Week 3
+
+This week, I moved away from MPS and tried to run ORB-SLAM3.
+
+- I found [Egocentric
+  Splats](https://github.com/facebookresearch/egocentric_splats), which was very
+  useful because the preprocessing script rectified the Fisheye624-calibrated images
+  to pinhole.
