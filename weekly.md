@@ -97,7 +97,6 @@ calibration file:
 
 Camera.type: "PinHole"
 
-# Camera calibration and distortion parameters (OpenCV)
 Camera1.fx: 1200.0
 Camera1.fy: 1200.0
 Camera1.cx: 1199.5
@@ -126,9 +125,9 @@ IMU.T_b_c1: !!opencv-matrix
        -0.041878701764, -0.621071285081, -0.782634418606, -0.000644298931,
         0.000000000000, 0.000000000000, 0.000000000000, 1.000000000000]
 
-IMU.NoiseGyro: 1e-3 # rad/s^0.5
-IMU.NoiseAcc: 1e-2   # m/s^1.5
-IMU.GyroWalk: 1e-7 # rad/s^1.5
-IMU.AccWalk: 1e-7 # m/s^2.5
+IMU.NoiseGyro: 1e-3
+IMU.NoiseAcc: 1e-2
+IMU.GyroWalk: 1e-7
+IMU.AccWalk: 1e-7
 IMU.Frequency: 794.55
 ```
