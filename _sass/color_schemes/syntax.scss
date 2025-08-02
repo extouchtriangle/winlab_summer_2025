@@ -1,284 +1,160 @@
 // _sass/custom/catppuccin_rouge.scss
 
 // Import the Catppuccin palette from your main theme file
-$catppuccin-rosewater: #f5e0dc;
-$catppuccin-flamingo: #f2cdcd;
-$catppuccin-pink: #f5c2e7;
-$catppuccin-mauve: #cba6f7;
-$catppuccin-red: #f38ba8;
-$catppuccin-maroon: #eba0ac;
-$catppuccin-peach: #fab387;
-$catppuccin-yellow: #f9e2af;
-$catppuccin-green: #a6e3a1;
-$catppuccin-teal: #94e2d5;
-$catppuccin-sky: #89dceb;
-$catppuccin-sapphire: #74c7ec;
-$catppuccin-blue: #89b4fa;
-$catppuccin-lavender: #b4befe;
-$catppuccin-text: #cdd6f4;
-$catppuccin-subtext1: #bac2de;
-$catppuccin-subtext0: #a6adc8;
-$catppuccin-overlay2: #9399b2;
-$catppuccin-overlay1: #7f849c;
-$catppuccin-overlay0: #6c7086;
-$catppuccin-surface2: #585b70;
-$catppuccin-surface1: #45475a;
-$catppuccin-surface0: #313244;
-$catppuccin-base: #1e1e2e;
-$catppuccin-mantle: #181825;
-$catppuccin-crust: #11111b;
-.highlight {
-  // General background for the code block. Using surface0 from Catppuccin.
+@import "../color_schemes/purple-dark";
+
+.highlight,
+pre.highlight {
   background-color: $catppuccin-surface0;
   color: $catppuccin-text;
+}
+
+.highlight pre {
+  background-color: $catppuccin-surface0;
+}
+
+.highlight .hll {
+  background-color: $catppuccin-surface0;
 }
 
 // Comments
 .highlight .c,
 .highlight .cm,
+.highlight .cp,
 .highlight .c1,
 .highlight .cs {
-  color: $catppuccin-overlay1; // Muted grey for comments
+  color: $catppuccin-overlay1;
   font-style: italic;
 }
 
 // Errors
 .highlight .err {
-  color: $catppuccin-red; // Bright red for errors
+  color: $catppuccin-red;
+  background-color: transparent; // Use a transparent background to match the theme
 }
 
-// Generic (often default text, but some specific cases)
-.highlight .g {
-  color: $catppuccin-subtext0; // Lighter grey for generic
+// Keywords
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: $catppuccin-mauve;
 }
 
-// Keywords (e.g., `if`, `else`, `function`)
-.highlight .k {
-  color: $catppuccin-mauve; // Purple for keywords
+// Literals (general)
+.highlight .l,
+.highlight .ld {
+  color: $catppuccin-green;
 }
 
-// Literals (general, will be overridden by more specific ones below)
-.highlight .l {
-  color: $catppuccin-green; // Green for literals
-}
-
-// Names (general, will be overridden by more specific ones below)
+// Names (general)
 .highlight .n {
-  color: $catppuccin-text; // Default text color for names
+  color: $catppuccin-text;
 }
 
-// Operators (e.g., `+`, `-`, `=`, `!`)
-.highlight .o {
-  color: $catppuccin-sapphire; // Blue for operators
-}
-
-// Other (e.g., escape sequences, special characters)
-.highlight .x {
-  color: $catppuccin-peach; // Orange for other
-}
-
-// Punctuation
+// Operators and Punctuation
+.highlight .o,
 .highlight .p {
-  color: $catppuccin-subtext1; // Subtext color for punctuation
+  color: $catppuccin-text;
 }
-
-// Specific comment types
-.highlight .cm {
-  color: $catppuccin-overlay1;
-} // comment.multiline
-.highlight .cp {
-  color: $catppuccin-mauve;
-} // comment.preproc
-.highlight .c1 {
-  color: $catppuccin-overlay1;
-} // comment.single
-.highlight .cs {
-  color: $catppuccin-mauve;
-} // comment.special
 
 // Generic types
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gs,
+.highlight .ow {
+  font-weight: bold;
+}
+
 .highlight .gd {
   color: $catppuccin-red;
 } // generic.deleted
-.highlight .ge {
-  font-style: italic;
-  color: $catppuccin-subtext0;
-} // generic.emph
-.highlight .gr {
-  color: $catppuccin-red;
-} // generic.error
-.highlight .gh {
-  color: $catppuccin-blue;
-} // generic.heading
 .highlight .gi {
   color: $catppuccin-green;
 } // generic.inserted
-.highlight .go {
-  color: $catppuccin-overlay1;
-} // generic.output
-.highlight .gp {
-  color: $catppuccin-subtext0;
-} // generic.prompt
-.highlight .gs {
-  font-weight: bold;
-  color: $catppuccin-text;
-} // generic.strong
+
 .highlight .gu {
-  color: $catppuccin-teal;
+  color: $catppuccin-overlay1;
 } // generic.subheading
-.highlight .gt {
-  color: $catppuccin-red;
-} // generic.traceback
 
-// Specific keyword types
-.highlight .kc {
+// Literals (specific types)
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
   color: $catppuccin-peach;
-} // keyword.constant
-.highlight .kd {
-  color: $catppuccin-blue;
-} // keyword.declaration
-.highlight .kn {
-  color: $catppuccin-mauve;
-} // keyword.namespace
-.highlight .kp {
-  color: $catppuccin-mauve;
-} // keyword.pseudo
-.highlight .kr {
-  color: $catppuccin-blue;
-} // keyword.reserved
-.highlight .kt {
-  color: $catppuccin-teal;
-} // keyword.type
+}
 
-// Specific literal types
-.highlight .ld {
+// Strings (general)
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
   color: $catppuccin-green;
-} // literal.date
-.highlight .m {
-  color: $catppuccin-peach;
-} // literal.number (general, will be overridden)
-.highlight .s {
-  color: $catppuccin-green;
-} // literal.string (general, will be overridden)
+}
 
-// Specific name types
+// Names (specific types)
 .highlight .na {
-  color: $catppuccin-blue;
+  color: $catppuccin-peach;
 } // name.attribute
-.highlight .nb {
+
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .bp {
   color: $catppuccin-yellow;
-} // name.builtin
-.highlight .nc {
-  color: $catppuccin-yellow;
-} // name.class
-.highlight .no {
-  color: $catppuccin-lavender;
-} // name.constant
-.highlight .nd {
-  color: $catppuccin-mauve;
-} // name.decorator
-.highlight .ni {
-  color: $catppuccin-text;
-} // name.entity
-.highlight .ne {
-  color: $catppuccin-red;
-} // name.exception
-.highlight .nf {
-  color: $catppuccin-blue;
-} // name.function
-.highlight .nl {
-  color: $catppuccin-mauve;
-} // name.label
-.highlight .nn {
-  color: $catppuccin-yellow;
-} // name.namespace
+}
+
+.highlight .nf,
+.highlight .nn,
 .highlight .nx {
   color: $catppuccin-text;
-} // name.other
-.highlight .py {
-  color: $catppuccin-text;
-} // name.property
+} // name.function, name.namespace, etc.
+
+.highlight .nl,
+.highlight .py,
+.highlight .vc,
+.highlight .vg {
+  color: $catppuccin-yellow;
+} // name.label, name.property, name.variable.class, etc.
+
 .highlight .nt {
   color: $catppuccin-red;
 } // name.tag
-.highlight .nv {
-  color: $catppuccin-blue;
-} // name.variable
 
-// Specific operator types
-.highlight .ow {
-  color: $catppuccin-mauve;
-} // operator.word
+.highlight .nv,
+.highlight .vi {
+  color: $catppuccin-yellow;
+}
+
+// Specific string types
+.highlight .sr,
+.highlight .ss {
+  color: $catppuccin-sky;
+} // literal.string.regex, literal.string.symbol
 
 // Whitespace
 .highlight .w {
-  color: $catppuccin-subtext0;
-} // text.whitespace
+  color: $catppuccin-text;
+}
 
-// More specific literal.number types
-.highlight .mf {
-  color: $catppuccin-peach;
-} // literal.number.float
-.highlight .mh {
-  color: $catppuccin-peach;
-} // literal.number.hex
-.highlight .mi {
-  color: $catppuccin-peach;
-} // literal.number.integer
-.highlight .mo {
-  color: $catppuccin-peach;
-} // literal.number.oct
-
-// More specific literal.string types
-.highlight .sb {
-  color: $catppuccin-green;
-} // literal.string.backtick
-.highlight .sc {
-  color: $catppuccin-green;
-} // literal.string.char
-.highlight .sd {
-  color: $catppuccin-green;
-} // literal.string.doc
-.highlight .s2 {
-  color: $catppuccin-green;
-} // literal.string.double
-.highlight .se {
-  color: $catppuccin-peach;
-} // literal.string.escape
-.highlight .sh {
-  color: $catppuccin-green;
-} // literal.string.heredoc
-.highlight .si {
-  color: $catppuccin-green;
-} // literal.string.interpol
-.highlight .sx {
-  color: $catppuccin-green;
-} // literal.string.other
-.highlight .sr {
-  color: $catppuccin-green;
-} // literal.string.regex
-.highlight .s1 {
-  color: $catppuccin-green;
-} // literal.string.single
-.highlight .ss {
-  color: $catppuccin-green;
-} // literal.string.symbol
-
-// More specific name.variable types
-.highlight .bp {
-  color: $catppuccin-blue;
-} // name.builtin.pseudo
-.highlight .vc {
-  color: $catppuccin-blue;
-} // name.variable.class
-.highlight .vg {
-  color: $catppuccin-blue;
-} // name.variable.global
-.highlight .vi {
-  color: $catppuccin-blue;
-} // name.variable.instance
-
-// Literal.Number.Integer.Long
-.highlight .il {
-  color: $catppuccin-peach;
+// Other
+.highlight .g {
+  color: $catppuccin-text;
 }
