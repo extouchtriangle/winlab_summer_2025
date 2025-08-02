@@ -89,9 +89,10 @@ $feedback-color: $catppuccin-crust;
 $border-color: rgba(0, 0, 0, 0);
 $content-width: 75rem;
 
-$header-height: 15rem;
+$header-height: 7rem;
 $nav-width: 15rem;
 $nav-width-md: 15rem;
-.main-header {
-  display: none;
+.main-content {
+  max-width: auto;
+  margin: 1em;
 }
