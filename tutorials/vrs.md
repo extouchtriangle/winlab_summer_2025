@@ -7,6 +7,10 @@ layout: default
 
 # Using VRSLib
 
+> > [!NOTE]
+>  Make sure you have ran `sudo make install` in the build directory of VRS
+>  before doing this.
+
 VRSLib has many dependencies and it can be quite hard to link the
 dependencies in the right order. Because its CMake library file is not very
 polished (and there was only one file that needed it), G++ was used instead.
