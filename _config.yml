@@ -11,11 +11,6 @@ just_the_docs_rouge_theme: color_schemes/syntax
 compress_html:
   ignore:
     envs: all
-
 # Enable line numbers globally for code blocks
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
