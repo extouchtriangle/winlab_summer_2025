@@ -91,3 +91,48 @@ This week, I moved away from MPS and tried to run ORB-SLAM3.
   Splats](https://github.com/facebookresearch/egocentric_splats), which was very
   useful because the preprocessing script rectified the Fisheye624-calibrated images
   to pinhole.
+- Using the pinhole-rectified images, I (with the help of Gemini) got this
+calibration file:
+```yaml
+
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV)
+Camera1.fx: 1200.0
+Camera1.fy: 1200.0
+Camera1.cx: 1199.5
+Camera1.cy: 1199.5
+
+Camera1.k1: 0.000
+Camera1.k2: 0.000
+Camera1.p1: 0.000
+Camera1.p2: 0.000
+
+Camera.width: 2400
+Camera.height: 2400
+
+Camera.newWidth: 600
+Camera.newHeight: 600
+# Camera frames per second
+Camera.fps: 15
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Transformation from camera to body-frame (imu)
+IMU.T_b_c1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [0.096069622099, 0.777188953575, -0.621890631985, -0.011539435317,
+          0.994493238815, -0.101231365144, 0.027118419253, -0.005419289842,
+       -0.041878701764, -0.621071285081, -0.782634418606, -0.000644298931,
+        0.000000000000, 0.000000000000, 0.000000000000, 1.000000000000]
+
+# IMU noise (Use those from VINS-mono)
+IMU.NoiseGyro: 1e-3 # rad/s^0.5
+IMU.NoiseAcc: 1e-2   # m/s^1.5
+IMU.GyroWalk: 1e-7 # rad/s^1.5
+IMU.AccWalk: 1e-7 # m/s^2.5
+IMU.Frequency: 794.55
+```
