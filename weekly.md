@@ -139,3 +139,4 @@ IMU.Frequency: 794.55
 ```
 - I then ran ORB-SLAM3 on a bunch of recordings and plotted the results:
 ![ORB-SLAM3 graph](assets/images/orbslam_graph.png "ORB-SLAM3 graph")
+- The rest of the time was spent working on the final presentation and poster.
