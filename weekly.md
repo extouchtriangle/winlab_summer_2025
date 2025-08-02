@@ -42,6 +42,6 @@ layout: home
 
 ## Week 2
 
-- Using the techniques from the previous week, I was able to run MPS on a few
-sequences, and plot the results.
-<!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_cLud0nuOIFRterRV6IEc492I1zLgn_KeMaCOzJEN0q71m3Oelrj7p_88fSRi3fdLjFOIN63Aqq8_/pubembed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+- Using the techniques developed the previous week, I was able to run MPS on
+three sequences to compare the results.
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_cLud0nuOIFRterRV6IEc492I1zLgn_KeMaCOzJEN0q71m3Oelrj7p_88fSRi3fdLjFOIN63Aqq8_/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
