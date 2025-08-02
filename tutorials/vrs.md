@@ -7,7 +7,7 @@ layout: default
 
 # Using VRSLib
 
-> > [!NOTE]
+> Note:
 >  Make sure you have ran `sudo make install` in the build directory of VRS
 >  before doing this.
 
