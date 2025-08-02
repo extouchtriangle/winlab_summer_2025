@@ -16,9 +16,9 @@ This week, I worked on running MPS on lower-framerate recordings.
 os.system(f"vrs copy 30fps.vrs --to frame{i}.vrs --around {current_time} 0.02 > /dev/null")
 ```
 
-By adjusting the time range so that exactly one frame would go into the output
-file, a selected subset of the frames could then be merged into a file that
-had a lower framerate.
+  By adjusting the time range so that exactly one frame would go into the output
+  file, a selected subset of the frames could then be merged into a file that
+  had a lower framerate.
 
 - Then, MPS flagged the file as having half of the frames dropped, because
   of a metadata tag in the file telling it that half of the frames were dropped.
