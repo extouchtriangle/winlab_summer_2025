@@ -1,6 +1,7 @@
 ---
 title: Final Presentation
 layout: home
+nav_order: 3
 ---
 
 # Final Presentation

@@ -1,6 +1,7 @@
 ---
 title: Weekly Progress
 layout: home
+nav_order: 2
 ---
 
 # Summer Internship: Weekly Progress Reports
@@ -98,11 +99,10 @@ This week, I moved away from MPS and tried to run ORB-SLAM3.
 ## Week 4
 
 - Using the pinhole-rectified images, I (with some Gemini to help extract the
-params) got this
-calibration file:
+  params) got this
+  calibration file:
 
 ```yaml
-
 Camera.type: "PinHole"
 
 Camera1.fx: 1200.0
@@ -125,13 +125,28 @@ Camera.fps: 15
 Camera.RGB: 1
 
 IMU.T_b_c1: !!opencv-matrix
-   rows: 4
-   cols: 4
-   dt: f
-   data: [0.096069622099, 0.777188953575, -0.621890631985, -0.011539435317,
-          0.994493238815, -0.101231365144, 0.027118419253, -0.005419289842,
-       -0.041878701764, -0.621071285081, -0.782634418606, -0.000644298931,
-        0.000000000000, 0.000000000000, 0.000000000000, 1.000000000000]
+  rows: 4
+  cols: 4
+  dt: f
+  data:
+    [
+      0.096069622099,
+      0.777188953575,
+      -0.621890631985,
+      -0.011539435317,
+      0.994493238815,
+      -0.101231365144,
+      0.027118419253,
+      -0.005419289842,
+      -0.041878701764,
+      -0.621071285081,
+      -0.782634418606,
+      -0.000644298931,
+      0.000000000000,
+      0.000000000000,
+      0.000000000000,
+      1.000000000000,
+    ]
 
 IMU.NoiseGyro: 1e-3
 IMU.NoiseAcc: 1e-2
