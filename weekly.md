@@ -91,6 +91,8 @@ This week, I moved away from MPS and tried to run ORB-SLAM3.
   Splats](https://github.com/facebookresearch/egocentric_splats), which was very
   useful because the preprocessing script rectified the Fisheye624-calibrated images
   to pinhole.
+
+  ![mps plot](assets/images/rectify.png "Fisheye624 vs Rectified Pinhole Images")
 - Using the pinhole-rectified images, I (with the help of Gemini) got this
 calibration file:
 
