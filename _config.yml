@@ -7,6 +7,7 @@ search_enabled: false
 color_scheme: purple-dark
 highlighter: rouge
 just_the_docs_rouge_theme: color_schemes/syntax
+favicon_ico: "/assets/images/favicon.png"
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 compress_html:
