@@ -33,5 +33,4 @@ g++ file_namename.cpp -o executable_name \
 ```
 
 {: .important }
->  Make sure you actually install the library (i. e. `sudo make install`)
-> before running the command above.
+>  Make sure you actually install the library (i. e. `sudo make install`) before running the command above.
