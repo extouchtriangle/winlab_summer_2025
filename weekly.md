@@ -37,3 +37,5 @@ layout: home
     }
   }
 ```
+
+- I was sadly unable to make it to the weekly presentation.
