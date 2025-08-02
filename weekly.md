@@ -93,6 +93,7 @@ This week, I moved away from MPS and tried to run ORB-SLAM3.
   to pinhole.
 - Using the pinhole-rectified images, I (with the help of Gemini) got this
 calibration file:
+
 ```yaml
 
 Camera.type: "PinHole"
