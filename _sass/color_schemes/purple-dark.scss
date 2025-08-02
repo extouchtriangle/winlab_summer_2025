@@ -1,5 +1,4 @@
 // _sass/catppuccin-theme-variables.scss
-@import "./color_schemes/syntax";
 
 // Catppuccin (Mocha) palette
 $catppuccin-rosewater: #f5e0dc;
@@ -29,6 +28,7 @@ $catppuccin-base: #1e1e2e;
 $catppuccin-mantle: #181825;
 $catppuccin-crust: #11111b;
 
+@import "./color_schemes/syntax";
 // Just the Docs theme variable overrides with Catppuccin colors
 
 // General colors
