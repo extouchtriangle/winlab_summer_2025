@@ -9,7 +9,7 @@ layout: home
 
 - Used hacky way to decrease framerate of file:
 
-  ```python
+  ```py
   os.system(f"vrs copy 30fps.vrs --to frame{i}.vrs --around {current_time} 0.02 > /dev/null")
   ```
 
