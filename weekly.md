@@ -91,9 +91,14 @@ This week, I moved away from MPS and tried to run ORB-SLAM3.
   Splats](https://github.com/facebookresearch/egocentric_splats), which was very
   useful because the preprocessing script rectified the Fisheye624-calibrated images
   to pinhole.
-
   ![mps plot](assets/images/rectify.png "Fisheye624 vs Rectified Pinhole Images")
-- Using the pinhole-rectified images, I (with the help of Gemini) got this
+- Presentation this week:
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTSYHJBDJiIqnvgN_qvrfBAPrc3ZtIv5iW3AHEHae42XHKt6mq9McFcmYdvVu9k7PSsjj6KCEathNCE/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Week 4
+
+- Using the pinhole-rectified images, I (with some Gemini to help extract the
+params) got this
 calibration file:
 
 ```yaml
