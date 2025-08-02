@@ -35,7 +35,7 @@ $color-scheme: catppuccin; // Set the scheme name
 $body-background-color: $catppuccin-crust;
 $body-text-color: $catppuccin-text;
 $body-heading-color: $catppuccin-text;
-$link-color: $catppuccin-mauve;
+$link-color: $catppuccin-sapphire;
 
 // Header and Footer colors
 $header-background-color: $catppuccin-mantle;
@@ -52,9 +52,9 @@ $nav-current-link-color: $catppuccin-text; // Current active link text color in 
 $sidebar-border-color: $catppuccin-surface0; // Border color in sidebar
 
 // Highlighting for current/active items in sidebar
-$sidebar-current-color: $catppuccin-mauve; // Color for active elements
+$sidebar-current-color: $catppuccin-sapphire; // Color for active elements
 $sidebar-current-background-color: $catppuccin-surface0; // Background for active elements
-$sidebar-current-hover-color: $catppuccin-mauve; // Hover color for active elements
+$sidebar-current-hover-color: $catppuccin-sapphire; // Hover color for active elements
 $sidebar-current-hover-background-color: $catppuccin-surface0; // Hover background for active elements
 
 // Search component colors
@@ -65,7 +65,7 @@ $search-result-preview-color: $catppuccin-subtext0; // Specific for search resul
 
 // Button colors
 $base-button-color: $catppuccin-surface2; // General button background
-$btn-primary-color: $catppuccin-mauve; // Primary button background
+$btn-primary-color: $catppuccin-sapphire; // Primary button background
 
 // Code block colors
 $code-background-color: $catppuccin-surface0;
@@ -78,10 +78,13 @@ $table-border-color: $catppuccin-surface1;
 // Callout colors
 $callout-background-color: $catppuccin-surface0;
 $callout-title-color: $catppuccin-text;
-$callout-border-color: $catppuccin-mauve;
+$callout-border-color: $catppuccin-sapphire;
 
 // Mermaid diagram background
 $mermaid-background-color: $catppuccin-surface0;
 
 // Feedback section color (derived from sidebar-color in default, mapping to a darker tone here)
 $feedback-color: $catppuccin-crust;
+
+$header-border-color: $catppuccin-crust;
+$sidebar-border-color: $catppuccin-mantle;
