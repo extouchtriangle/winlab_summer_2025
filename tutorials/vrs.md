@@ -13,7 +13,7 @@ polished (and there was only one file that needed it), G++ was used instead.
 The command is:
 
 ```bash
-g++ FilterCopySamples.cpp -o FilterCopySamples \
+g++ file_namename.cpp -o executable_name \
     -L/usr/local/lib \
     -I/usr/local/include \
     -lvrs_utils \
