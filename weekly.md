@@ -50,7 +50,7 @@ This week, I worked on running MPS on lower-framerate recordings.
   An example is the Python script to extract the necessary subset of frames out of
   the dataset recording:
 
-```python
+```python linenos
 import os
 os.system("vrs 30fps.vrs + 1201-2 | tail -n 1")
 num_frames = int(input("How many frames? "))
