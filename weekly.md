@@ -10,7 +10,7 @@ nav_order: 2
 
 This week, I worked on running MPS on lower-framerate recordings.
 
-- I used a very hacky way to decrease the framerate of file:
+- I used a very hacky way to decrease the framerate of the file:
 
 ```python
 os.system(f"vrs copy 30fps.vrs --to frame{i}.vrs --around {current_time} 0.02 > /dev/null")
