@@ -156,3 +156,20 @@ IMU.Frequency: 794.55
 - I then ran ORB-SLAM3 on a bunch of recordings and plotted the results:
   ![ORB-SLAM3 graph](assets/images/orbslam_graph.png "ORB-SLAM3 graph")
 - The rest of the time was spent working on the final presentation and poster.
+
+## Week 5
+
+- Ran [Kalibr](https://github.com/ethz-asl/kalibr) on a EuRoC dataset to compare
+  with known "real" calibration:
+  ```txt
+  KALIBR GENERATED MATRIX
+  [ 0.99999748, -0.00221923, -0.00032694,  0.10999884,
+    0.00221441,  0.99989830, -0.01408872, -0.00021094,
+    0.00035818,  0.01408796,  0.99990070,  0.00065071,
+    0.00000000,  0.00000000,  0.00000000,  1.00000000]
+  DATASET GIVEN CALIBRATION
+  [0.999997256477797,-0.002317135723275,-0.000343393120620,0.110074137800478,
+    0.002312067192432,0.999898048507103,-0.014090668452683,-0.000156612054392,
+    0.000376008102320,0.014089835846691,0.999900662638081,0.000889382785432,
+    0,0,0,1.000000000000000]
+  ```
