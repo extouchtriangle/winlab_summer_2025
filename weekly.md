@@ -173,3 +173,7 @@ IMU.Frequency: 794.55
     0.000376008102320,0.014089835846691,0.999900662638081,0.000889382785432,
     0,0,0,1.000000000000000]
   ```
+- Also ran [Allan Variance ROS](https://github.com/ori-drs/allan_variance_ros)
+  on a simulation sequence (Allan variance plots are needed for IMU calibration
+  with Kalibr)
+- Gave final presentation on Thursday
